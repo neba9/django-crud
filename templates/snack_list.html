@@ -6,9 +6,11 @@
 <a href="{% url 'snack_create' %}">+ New snack</a>
 <ul>
     {% for snack in object_list %}
+    <div class="list">
       <li>
           <a href="{% url 'snack_detail' snack.pk %}">{{ snack.title }}</a>
       </li>
+    </div>
   {% endfor %}
 </ul>
 
